@@ -18,8 +18,20 @@
                     <img src="images/avatar.jpg" class="avatarimg"alt="avatar">
                     <span class="avname">Alexey Lebed</span>
                 </div>
-                <div class="nav">
-                    <img src="images/menu.png" class="burger" alt="">
+                <div class="nav" id = "nav">
+                    <div class="navmobile" id="navmobile">
+                        <img src="images/menu.svg" class="burger" id = "burger" alt="">
+                        <div class="navinner" id = "navinner">
+                            <a class="navinnerelement"  href="index.html" >About</a>
+                            <a class="navinnerelement"  href="portfolio.html">Portfolio</a>
+                            <a class="navinnerelement"  href="contacts.html">Contact</a>  
+                        </div>
+                        <style type="text/css">
+                            .navinner{
+                                display:none;
+                            }
+                        </style>
+                    </div> 
                     <a class="navelement" id="about" href="index.html" >About</a>
                     <a class="navelement" id="portfolio" href="portfolio.html">Portfolio</a>
                     <a class="navelement" id="contact" href="contacts.html">Contact</a>  
@@ -29,20 +41,21 @@
     </header>
     <section class="main">
             <div class="container">
-                <div class="contact">
+                <div class="contact" id ="hidemenu">
                     <h2>Contact me</h2>
                     <br>
                     <div class="form">
                         <p class="inputlabel">Your name</p>
-                        <input type="text" placeholder="For example: Jane Doe" class="stinput">
+                        <input type="text" placeholder=" For example: Jane Doe" class="stinput">
                         <p class="inputlabel">Your name</p>
-                        <input type="text" placeholder="For example: janedoe@gmail.com" class="stinput">
+                        <input type="text" placeholder=" For example: janedoe@gmail.com" class="stinput">
                         <p class="inputlabel">Your message</p>
-                        <textarea name="your message" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+                        <textarea name="your message" id="" cols="30" rows="10" placeholder=" Your message"></textarea>
                         <button class="actionbutton">Send</button>
                     </div>
                 </div>
             </div>
         </section>
+        <script src="script.js"></script>
 </body>
 </html>

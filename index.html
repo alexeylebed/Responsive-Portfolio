@@ -18,8 +18,20 @@
                     <img src="images/avatar.jpg" class="avatarimg"alt="avatar">
                     <span class="avname">Alexey Lebed</span>
                 </div>
-                <div class="nav">
-                    <img src="images/menu.png" class="burger" alt="">
+                <div class="nav" id = "nav">
+                    <div class="navmobile" id="navmobile">
+                        <img src="images/menu.svg" class="burger" id = "burger" alt="">
+                        <div class="navinner" id = "navinner">
+                            <a class="navinnerelement"  href="index.html" >About</a>
+                            <a class="navinnerelement"  href="portfolio.html">Portfolio</a>
+                            <a class="navinnerelement"  href="contacts.html">Contact</a>  
+                        </div>
+                        <style type="text/css">
+                            .navinner{
+                                display:none;
+                            }
+                        </style>
+                    </div> 
                     <a class="navelement" id="about" href="index.html" >About</a>
                     <a class="navelement" id="portfolio" href="portfolio.html">Portfolio</a>
                     <a class="navelement" id="contact" href="contacts.html">Contact</a>  
@@ -29,7 +41,7 @@
     </header>
     <section class="main">
         <div class="container">
-            <div class="about">
+            <div class="about" id ="hidemenu">
                 <h2>About</h2>
                 <p class="descriprion">
                     Odnoklassniki (OK.ru) is a popular social network whose Partner Program rewards quality content creators.  <br>
@@ -45,5 +57,6 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
